@@ -39,44 +39,51 @@
                 <section>
 					<h2><b> VulGr Architecture </b></h2>
 					<!-- your skills -->
-                    <img src="./images/Architecture-NIPS.JPG">
+                    <center><img src="./images/Architecture-NIPS.JPG" alt="centered image" ht="1000" width="1000"></center>
 				</section>
 				<section>
 					<h2><b> Summary of Existing Vulnerability Detection Datasets</b></h2>
 					<!-- your skills -->
-                    <img src="./images/Datasets-NIPS.png"
+                    <center> <img src="./images/Datasets-NIPS.png" height="150"> </center>
 				</section>
                 <section>
 					<h2><b> Description of Applications Comprising our VulGr dataset  </b></h2>
 					<!-- your skills -->
-                    <img src="./images/ApplicationUsedInNIPS.JPG"
+                    <center> <img src="./images/ApplicationUsedInNIPS.JPG" height="150" wedth=""> </center>
 				</section>               
 				<section>
 					<h2><b> Dataset Information </b></h2>
-                    <img src="./images/dataset-info-nips.JPG"
+                    <center> <img src="./images/dataset-info-nips.JPG" height="598" width="398"> </center>
 
   			    </section>  
 				<section>
 					<h2> <b> Dataset Formating and Labeling </b> </h2>
 					<!-- your education -->
-                    <h3 style="text-align:justify"> National Vulnerability Database (NVD) and Common Vulnerabilities and Exposures (CVE) information were used to identify vulnerable functions. The generated graph is then converted into a textual format that is compatible with Pytorch Geometric Libraries following a popular TU dataset format (TU Dataset :  A collection of benchmark datasets for learning with graphs, ICML 2020 Workshop on Graph Representation Learning and Beyond) as follows:
-                    <h3> n   =  total number of nodes </h3>    
-                    <h3> m  =  total number of edges </h3>
-                    <h3> N= number of graphs </h3>
-                    <h3> 1)	Function_A.txt (m lines):   A sparse adjacency matrix for all graphs, each record corresponds to (row, col) resp. (node_id, node_id) </h3>
-                    <h3> 2)	Function_graph_indicator.txt (n lines):    A column vector of graph identifiers for all nodes of all graphs, the ith record corresponds to graph_id which contains node_id i. </h3>
-                    <h3> 3)	Function_graph_labels.txt (N lines):     The class labels (Vulnerable - 1, Non-Vulnerable - 0) for all graphs in the dataset, the ith record corresponds to the class label of the graph with graph_id i. </h3>
-                    <h3> For the current work, we didn’t consider node classification. We only categorized the graphs function-wise.  We can use the node classification in the future for more </h3>
+                    <hr style="text-align:justify"> <b> National Vulnerability Database (NVD) and Common Vulnerabilities and Exposures (CVE) information were used to identify vulnerable functions. The generated graph is then converted into a textual format that is compatible with Pytorch Geometric Libraries following a popular TU dataset format (TU Dataset :  A collection of benchmark datasets for learning with graphs, ICML 2020 Workshop on Graph Representation Learning and Beyond) as follows: </b></hr>
+                    <h3></h3>
+                    <b> n   =  total number of nodes </b> 
+                    <h3></h3>   
+                    <b> m  =  total number of edges </b>
+                    <h3></h3>
+                    <b> N= number of graphs </b>
+                    <h3></h3>
+                         <b> 1)	Function_A.txt (m lines):   A sparse adjacency matrix for all graphs, each record corresponds to (row, col) resp. (node_id, node_id) </b>
+                         <h3></h3>
+                         <b> 2)	Function_graph_indicator.txt (n lines):    A column vector of graph identifiers for all nodes of all graphs, the ith record corresponds to graph_id which contains node_id i. </b>
+                         <h3></h3>
+                         <b> 3)	Function_graph_labels.txt (N lines):     The class labels (Vulnerable - 1, Non-Vulnerable - 0) for all graphs in the dataset, the ith record corresponds to the class label of the graph with graph_id i. </b>
+                         <h3></h3>
+                         <b> * For the current work, we didn’t consider node classification. We only categorized the graphs function-wise.  We can use the node classification in the future  </b>
 				</section>
                 <section>
 					<h2><b> Usages </b></h2>
-                    You can use our dataset with Pytorch Geometric libraries such as DGI (https://www.dgl.ai/), PyG (https://pyg.org/) and even directly with Torch-Geometric Libraries.
-
+                    <hr style="text-align:justify"> <b> You can use our dataset with Pytorch Geometric libraries such as DGI (https://www.dgl.ai/), PyG (https://pyg.org/) and even directly with Torch-Geometric Libraries. </b> </hr>
                 </section>
                 <section>
                     <h2><b> Download </b></h2>
-                    <p>Link:  <a href="https://utdallas.box.com/s/1onexj8emcgorwq5798yu07id1o7m255"> VulGr Dataset </a>.</p>
-                    <p>Please let us know if you need our help to create new datasets for different applications and share your feedbacks to improve the current and future works</p>
+                    <hr><b></b></hr>
+                    <p> <b> Link:  <a href="https://utdallas.box.com/s/1onexj8emcgorwq5798yu07id1o7m255"> VulGr Dataset </a>.</p>
+                    <p>Please let us know if you need our help to create new datasets for different applications and share your feedbacks to improve the current and future works. </b></p>
                 </section>
 			</article>
 			<article id="mainRight">
@@ -84,7 +91,8 @@
                 <section>
 					<h2><b> Related Pulications </b></h2>
 					<!-- about you -->
-                    <p>
+                    <hr></hr>
+                    <p> <b>
                         <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 1.</a></a> <u>Zamani, M.</u>, Khan, L., Hamlen, K., VulGr: Benchmark Graph Dataset for Source and
                         Binary Vulnerability Detection Systems, NeurIPS-Benchmark Dataset Track 2023</a>
                     </p>
