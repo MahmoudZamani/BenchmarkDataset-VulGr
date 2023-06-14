@@ -39,85 +39,73 @@
                 <section>
 					<h2><b> VulGr Architecture </b></h2>
 					<!-- your skills -->
-                    <img src="./images/Architecture-NIPS.JPG" height="1000px" width="700px">
+                    <img src="./images/Architecture-NIPS.JPG">
 				</section>
 				<section>
 					<h2><b> Summary of Existing Vulnerability Detection Datasets</b></h2>
 					<!-- your skills -->
-
+                    <img src="./images/Datasets-NIPS.png"
 				</section>
                 <section>
 					<h2><b> Description of Applications Comprising our VulGr dataset  </b></h2>
 					<!-- your skills -->
-
+                    <img src="./images/ApplicationUsedInNIPS.JPG"
 				</section>               
 				<section>
 					<h2><b> Dataset Information </b></h2>
-
+                    <img src="./images/dataset-info-nips.JPG"
 
   			    </section>  
 				<section>
-					<h2> <b> Dataset Formating </b> </h2>
+					<h2> <b> Dataset Formating and Labeling </b> </h2>
 					<!-- your education -->
-                    <h3 style="text-align:justify"> AWS Solution Architecture, Oracle DBA, Oracle Data Warehouse, CCA 175, IBM ZeroTrust,
-						Oracle AS 10g R3 (J2EE, Java Programming, Webservices, Security), CCNA-Cisco, ISMS (ISO 27001 and 27002), Oracle Big 
-						Data, Data Science with Apache Spark, GIAC and CCIS (self-study), Agile integration by Crossvale & RedHat company (Fuse, OpenShift, Containers, 
-						Apache Camel)
-				    </h3>  
+                    <h3 style="text-align:justify"> National Vulnerability Database (NVD) and Common Vulnerabilities and Exposures (CVE) information were used to identify vulnerable functions. The generated graph is then converted into a textual format that is compatible with Pytorch Geometric Libraries following a popular TU dataset format (TU Dataset :  A collection of benchmark datasets for learning with graphs, ICML 2020 Workshop on Graph Representation Learning and Beyond) as follows:
+                    <h3> n   =  total number of nodes </h3>    
+                    <h3> m  =  total number of edges </h3>
+                    <h3> N= number of graphs </h3>
+                    <h3> 1)	Function_A.txt (m lines):   A sparse adjacency matrix for all graphs, each record corresponds to (row, col) resp. (node_id, node_id) </h3>
+                    <h3> 2)	Function_graph_indicator.txt (n lines):    A column vector of graph identifiers for all nodes of all graphs, the ith record corresponds to graph_id which contains node_id i. </h3>
+                    <h3> 3)	Function_graph_labels.txt (N lines):     The class labels (Vulnerable - 1, Non-Vulnerable - 0) for all graphs in the dataset, the ith record corresponds to the class label of the graph with graph_id i. </h3>
+                    <h3> For the current work, we didn’t consider node classification. We only categorized the graphs function-wise.  We can use the node classification in the future for more </h3>
 				</section>
                 <section>
 					<h2><b> Usages </b></h2>
+                    
+                    You can use our dataset with Pytorch Geometric libraries such as DGI (https://www.dgl.ai/), PyG (https://pyg.org/) and even directly with Torch-Geometric Libraries.
+
+                </section>
+                <section>
+                    <h2><b> Download </b></h2>
+                    <p>Link:  <a href="https://utdallas.box.com/s/1onexj8emcgorwq5798yu07id1o7m255"> VulGr Dataset </a>.</p>
+                    <p>Please let us know if you need our help to create new datasets for different applications and share your feedbacks to improve the current and future works</p>
                 </section>
 			</article>
 			<article id="mainRight">
 
                 <section>
-					<h2><b>Publications</b></h2>
+					<h2><b> Related Pulications </b></h2>
 					<!-- about you -->
                     <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 1.</a></a> Islam, S., <u>Zamani, M.</u>, et al., Confidential Execution of Deep Learning Inference at the Untrusted Edge with ARM TrustZone, 2023 CODASPY: Data and Application Security and Privacy </a>
+                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 1.</a></a> <u>Zamani, M.</u>, Khan, L., Hamlen, K., VulGr: Benchmark Graph Dataset for Source and
+                        Binary Vulnerability Detection Systems, NeurIPS-Benchmark Dataset Track 2023</a>
                     </p>
                     <p>
-                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:UeHWp8X0CEIC"> 2.</a></a> Li, X., Khan, L., <u>Zamani, M.</u>, et al., Con2Mix: A Semi-Supervised Method for Imbalanced Tabular Security Data, 2023 IFIP Annual Conference on Data and Applications Security and Privacy </a>
+                        <a href="https://openreview.net/forum?id=rrZtzI7xj2b"> 2.</a></a> <u>Zamani, M.</u>, Irteza, S., et al., Cross Domain Vulnerability Detection Using Graph Contrastive Learning, Accepted in ICLR TinyPaper 2023 </a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 3.</a></a> <u>Zamani, M.</u>, Khan, L., Hamlen, K., Robust Vulnerability Detection Systems Using Explainable AI Methods, INFORM 2023</a>
+                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 3.</a></a> <u>Zamani, M.</u>, Wickramasuriya, S., et al., Vulnerability Detection Using Self-Supervised Graph Masked Auto-Encoders, Submitted in journal of TNNLS 2023  </a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 4.</a></a> <u>Zamani, M.</u>, Wickramasuriya, S., et al., Counterfactual Reasoning for Source Code Vulnerability Detection, In final preparation for XAI conference 2023 </a>
+                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 4.</a></a> <u>Wickramasuriya, S.</u>, Zamani, M., et al., RANSAQ: Searching Source-Binary Hybrid Code Property Graphs for Vulnerabilities, In final preparation for NDSS 2023  </a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 5.</a></a> <u>Zamani, M.</u>, Irteza, S., et al., Cross Domain Vulnerability Detection Using Graph Contrastive Learning, Submitted in ICLR TinyPaper 2023 </a>
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:UeHWp8X0CEIC"> 5.</a></a> Li, X., Khan, L., <u>Zamani, M.</u>, et al., Con2Mix: A Semi-Supervised Method for Imbalanced Tabular Security Data, 2023 IFIP Annual Conference on Data and Applications Security and Privacy </a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 6.</a></a> <u>Zamani, M.</u>, Irteza, S., et al., Evaluation of Graph Contrastive Learning Methods and Modules for Vulnerability Detection, In final preparation for NDSS conference 2023</a>
+                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 6.</a></a> <u>Zamani, M.</u>, Khan, L., Hamlen, K., Robust Vulnerability Detection Systems Using Explainable AI Methods, INFORM 2023</a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 7.</a></a> <u>Zamani, M.</u>, Wickramasuriya, S., et al., Vulnerability Detection Using Contrastive Self-Supervised Pretraining Method and Self-Attention Networks, In final preparation for RAID 2023 </a>
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 8.</a></a> <u>Zamani, M.</u>, Wickramasuriya, S., et al., Vulnerability Detection Using Self-Supervised Graph Masked Auto-Encoders, Submitted in journal of TNNLS 2023  </a>
-                    </p>
-                    <!-- <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 9.</a></a> <u>Zamani, M.</u>, Wickramasuriya, S., et al., Graph Benchmark Dataset for Vulnerability Detection, Submitted in journal of TNNLS 2023  </a>
-                    </p> -->
-                    <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 9.</a></a> <u>Zamani, M.</u>, Wickramasuriya, S., et al., On the effectiveness of Vulnerability Detection Using Graph Masked Auto-Encoders, In final preparation for USENIX/NEURIPS 2023  </a>
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/mahmoud-zamani/"> 10.</a></a> <u>Wickramasuriya, S.</u>, Zamani, M., et al., RANSAQ: Searching Source-Binary Hybrid Code Property Graphs for Vulnerabilities, Second try and submiting in an upcoming conferences 2023  </a>
-                    </p>
-                    <p>
-                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:UeHWp8X0CEIC"> 11.</a></a> Li, X., Khan, L., <u>Zamani, M.</u>, et a., MCoM: A Semi-Supervised Method for Imbalanced Tabular Security Data. In: Sural, S., Lu, H. (eds) Data and Applications Security and Privacy XXXVI. DBSec 2022.</a>
-                    </p>
-                    <p>
-                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:qjMakFHDy7sC"> 12.</a></a>  L. Abdeljaber, L. Khan, <u>M. Zamani</u>, et al., A Novel Application of a Semi-Supervised Learning Approach to Identify Choroidal Tumors in Fundus Photographs, 2021 IEEE Third International Conference on Cognitive Machine Intelligence (CogMI), 2021 </a>
-                    </p>
-                    <p>
-                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:u-x6o8ySG0sC"> 13.</a> <a> Tao, H., Wang, Z., Li, Y., <u>Zamani, M.</u>, Comc: A framework for online cross-domain multistream classification. In 2019 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE. </a>
-                    </p>
-                    <p>
-                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:d1gkVwhDpl0C"> 14.</a></a> <u>Zamani, M.</u>, Afshar, M., Presentation of a New Approach to the Rapid Failure Recovery in Databases using the Alternative Base Method and Failover Clustering Technique, 2015 </a>
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:UeHWp8X0CEIC"> 7.</a></a> Li, X., Khan, L., <u>Zamani, M.</u>, et a., MCoM: A Semi-Supervised Method for Imbalanced Tabular Security Data. In: Sural, S., Lu, H. (eds) Data and Applications Security and Privacy XXXVI. DBSec 2022.</a>
                     </p>
 				</section>
 			</article>
