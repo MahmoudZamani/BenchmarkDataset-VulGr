@@ -1,19 +1,18 @@
 <html>
 	<head>
         <link href="style.css" rel="stylesheet">
-        <title> Benchmark VulGr Dataset </title>
+        <title> SECIOTT: Ensuring End-to-End IoT Data Security through Cloud-Enhanced Confidential Computing </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	</head>
 
 	<body  style="background-color:#DBF9FC"; oncontextmenu="return false";>
 		<header id="header">
 			<!-- resume header with your name and title -->
-			<h1><b> VulGr: Benchmark Graph Dataset for Source and
-                Binary Vulnerability Detection Systems </b></h1>
+			<h1><b> SECIOTT: Ensuring End-to-End IoT Data Security through Cloud-Enhanced Confidential Computing </b></h1>
             <!--<p class="p-welcome"> Welcome to my personal website. Feel free to contact me about my works</p> -->
 			<hr>
 
-			<p style="text-align:justify"> <b> <u>VulGr</u> is a new graph vulnerability detection dataset based on a novel graph structure that combines source- and binary-level code features into a composite graph to expose vulnerabilities in real-world applications. Recent works have applied GNNs to reduce the human effort of detecting vulnerabilities in large codes by converting source code information into a graph for GNN training. Such approaches convert source codes to intermediate representations, from which Control-Flow Graphs (CFGs) and Abstract Syntax Trees (ASTs) are extracted. Binary graph representations can also be used with GNNs, but at the expense of losing many important features, such as data dependencies and control-flows only available from sources. However, many real-world software attacks exploit a combination of source-level bugs and binary-level implementation details, and are therefore difficult or impossible to detect using source- or binary-level features alone. To overcome this issue, VulGR introduces a novel composite Cross-Domain Code Property Graph (CDCPG) representation that leverages the vulnerability pattern recognition of GNNs by combining these two different domains. Graphs from six different C/C++ applications are accumulated into the VulGr dataset, with each graph labeled vulnerable or non-vulnerable using information drawn from public vulnerability databases. The benchmark performance of popular GNN methods in this domain are then evaluated, with the best performing model yielding an F1-score of 0.855 and Recall of 0.908. </b> </p>
+			<p style="text-align:justify"> <b> <u>SECIOTT</u> The IOT devices are rapidly becoming ubiquitous for their ability to effortlessly automate processes by interconnecting smart devices without human intervention. These devices collect data from the most private and sensitive domains of our lives and send to the cloud services for management and further processing including the rule-based automation programs. The cloud services are vulnerable to outside threats, which could cause serious user privacy violations as well as user safety risks leading to unrecoverable loses. Hence, it’s essential to protect the sensitive and private IOT data and rule-based automation programs against different cyberattacks. To safeguard this sensitive and private IOT data, solutions based on trusted execution environments (TEEs) could be utilized, providing end-to-end encrypted solution. However, in this study, we demonstrate that the end-to-end encryption offered by TEE based solutions for IOT devices may not be entirely sufficient. We substantiate this by revealing an attack that can infer sensitive IOT device information, such as the temperature reading of a thermometer, merely by analyzing memory access patterns of the TEE based solution. Our results indicate that in some cases, we can detect the device type with around 95% accuracy and we can infer the values sent by IOT devices (e.g., temperature reading) with approximately 85% accuracy. Subsequently, we design a system called SECIOTT to enhance the overall data security of IOT based solutions in the cloud that prevents these types of attacks by employing strategies such as oblivious execution and data padding. With our defense strategy to mitigate the pattern leakage, we observe significant reduction in device type detection and value prediction with accuracy of at most 27% and 19%, respectively. </b> </p>
 			<hr>
 		</header>
 		<main>
@@ -23,7 +22,7 @@
 					<!-- contact info including social media -->
                     <p>
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:zamanioracle@gmail.com">zamanioracle@gmail.com</a>
+                        <a href="mailto:md.shihabul.islam@utdallas.edu">md.shihabul.islam@utdallas.edu</a>
                         <!--<a href="mailto:mahmoud.zamani@utdallas.edu">   Mahmoud.Zamani@UTDallas.edu</a>-->
                     </p>
                     <p>
@@ -37,57 +36,86 @@
                     </p>
 				</section>
                 <section>
-					<h2><b> VulGr Architecture </b></h2>
+					<h2><b> SECIOTT Architecture </b></h2>
 					<!-- your skills -->
                     <hr><b></b></hr>
-                    <center><img src="./images/Architecture-NIPS.JPG" alt="centered image" ht="1000" width="1000"></center>
+                    <center><img src="./images/SECIoTT-Arc.JPG" alt="centered image" ht="1000" width="1000"></center>
 				</section>
 				<section>
-					<h2> <p style="text-align:justify"> <b> Summary of Existing Vulnerability Detection Datasets</b> </p> </h2>
+					<h2> <p style="text-align:justify"> <b> Rule Conflict Definitions </b> </p> </h2>
 					<!-- your skills -->
                     <hr><b></b></hr>
-                    <center> <img src="./images/Datasets-NIPS.png" height="150"> </center>
+                    <center> <img src="./images/Table-1-ruleconflictdefinitions.JPG" height="150"> </center>
 				</section>
                 <section>
-					<h2><b> Description of Applications Comprising our VulGr dataset  </b></h2>
+					<h2><b> Sample Rule in JSON  </b></h2>
 					<!-- your skills -->
                     <hr><b></b></hr>
-                    <center> <img src="./images/ApplicationUsedInNIPS.JPG" height="150" wedth=""> </center>
+                    <center> <img src="./images/Samplerule.JPG" height="150" wedth=""> </center>
 				</section>               
 				<section>
-					<h2><b> Dataset Information </b></h2>
+					<h2><b> Sample Device Event in JSON </b></h2>
                     <hr><b></b></hr>
-                    <center> <img src="./images/dataset-info-nips.JPG" height="598" width="398"> </center>
+                    <center> <img src="./images/SampleDeviceEventinJSON.JPG" height="598" width="398"> </center>
 
-  			    </section>  
+  			    </section>
+                <section>
+					<h2><b>  Sample code-snippet for obliviously checking equality condition </b></h2>
+                    <hr><b></b></hr>
+                    <center> <img src="./images/SampleCode-SnippetForObliviouslyChecking.JPG" height="598" width="398"> </center>
+
+  			    </section>
+                <section>
+					<h2><b>  Comparison of average execution time for three cases: no SGX, SGX without encryption, and with SGX. A total of 10000 device events are considered with varying Ruleset sizes of 100, 1000, 10000, and 100000. </b></h2>
+                    <hr><b></b></hr>
+                    <center> <img src="./images/Comparison.JPG" height="598" width="398"> </center>
+
+  			    </section>
+                <section>
+					<h2><b> Smart devices used in the Smart Home Automation </b></h2>
+                    <hr><b></b></hr>
+                    <center> <img src="./images/SmartHomeDevices.JPG" height="598" width="398"> </center>
+
+  			    </section>
+                <section>
+					<h2><b> Comparison of Enclave heap memory (in KB) used for two cases: with SGX and with SGX but without encryption. A total of 10000 device events are considered with varying Ruleset sizes of 100, 1000, 10000, and 100000. </b></h2>
+                    <hr><b></b></hr>
+                    <center> <img src="./images/Comparison-2.JPG" height="598" width="398"> </center>
+
+  			    </section>
+                <section>
+					<h2><b> Multiclass classification (10 classes) for predicting (5a) device type and (5b) number of rules satisfied in enclave. </b></h2>
+                    <hr><b></b></hr>
+                    <center> <img src="./images/MulticlassClassification.JPG" height="598" width="398"> </center>
+
+  			    </section>
+                <section>
+					<h2><b> Prediction of Motion Sensor Values (active, inactive) </b></h2>
+                    <hr><b></b></hr>
+                    <center> <img src="./images/MotionSensorPrediction.JPG" height="598" width="398"> </center>
+
+  			    </section>
+                <section>
+					<h2><b> Prediction of Temperature and Humidity values (5 buckets) </b></h2>
+                    <hr><b></b></hr>
+                    <center> <img src="./images/TempreturePrediction.JPG" height="598" width="398"> </center>
+
+  			    </section>
 				<section>
-					<h2> <b> Dataset Formating and Labeling </b> </h2>
+					<h2> <b> Conclusion </b> </h2>
 					<!-- your education -->
-                    <hr style="text-align:justify"> <b> National Vulnerability Database (NVD) and Common Vulnerabilities and Exposures (CVE) information were used to identify vulnerable functions. The generated graph is then converted into a textual format that is compatible with Pytorch Geometric Libraries following a popular TU dataset format (TU Dataset :  A collection of benchmark datasets for learning with graphs, ICML 2020 Workshop on Graph Representation Learning and Beyond) as follows: </b></hr>
+                    <hr style="text-align:justify"> <b> Since the IOT ecosystem is ever-growing, more robust solutions are required to protect private and sensitive user information from falling into the wrong hands. In this paper, we propose an end-to-end secure IOT data management platform, named SECIOTT, by utilizing strong cryptographic techniques and TEEs such as INTEL SGX and ARM TRUST-ZONE. We implement a trigger-action rule-based IOT automation framework as an application of SECIOTT, where we securely operate on the IOT data and rules in the SGX enclave to automate processes for securely controlling and managing IOT devices. We evaluate SECIOTT with IOT data in real-time from real smart devices in a practical smart home scenario. Moreover, we investigate the effect of access pattern leakage attack on SGX and discover that sensitive IoT information can be inferred with notable accuracy, which demonstrates that end-to-end encryption-based TEE solutions are not adequate to safeguard private information. Consequently, we propose countermeasures based on oblivious execution and data padding to obscure the access pattern leakages. Our empirical evaluation suggests that the proposed defense strategy achieves impressive results by significantly reducing the prediction accuracy of IOT data information, and thereby further fortifying the encryption-based TEE solutions and ensuring system security and data privacy. </b></hr>
                     <h3></h3>
-                    <b> n   =  total number of nodes </b> 
-                    <h3></h3>   
-                    <b> m  =  total number of edges </b>
-                    <h3></h3>
-                    <b> N= number of graphs </b>
-                    <h3></h3>
-                         <b> 1)	Function_A.txt (m lines):   A sparse adjacency matrix for all graphs, each record corresponds to (row, col) resp. (node_id, node_id) </b>
-                         <h3></h3>
-                         <b> 2)	Function_graph_indicator.txt (n lines):    A column vector of graph identifiers for all nodes of all graphs, the ith record corresponds to graph_id which contains node_id i. </b>
-                         <h3></h3>
-                         <b> 3)	Function_graph_labels.txt (N lines):     The class labels (Vulnerable - 1, Non-Vulnerable - 0) for all graphs in the dataset, the ith record corresponds to the class label of the graph with graph_id i. </b>
-                         <h3></h3>
-                         <b> * For the current work, we didn’t consider node classification. We only categorized the graphs function-wise.  We can use the node classification in the future  </b>
-				</section>
+                </section>
                 <section>
 					<h2><b> Usages </b></h2>
-                    <hr style="text-align:justify"> <b> You can use our dataset with Pytorch Geometric libraries such as DGI (https://www.dgl.ai/), PyG (https://pyg.org/) and even directly with Torch-Geometric Libraries. </b> </hr>
+                    <hr style="text-align:justify"> <b> Readme File Link </b> </hr>
                 </section>
                 <section>
                     <h2><b> Download </b></h2>
                     <hr><b></b></hr>
-                    <p> <b> Link:  <a href="https://utdallas.box.com/s/1onexj8emcgorwq5798yu07id1o7m255"> VulGr Dataset </a>.</p>
-                    <p>Please let us know if you need our help to create new datasets for different applications and share your feedbacks to improve the current and future works. </b></p>
+                    <!-- <p> <b> Link:  <a href="https://utdallas.box.com/s/1onexj8emcgorwq5798yu07id1o7m255"> VulGr Dataset </a>.</p> -->
+                    <p>I will make the project available and open-source after the paper published. Please let us know if you need our help to reproduce the results and share your feedbacks to improve the current and future works. </b></p>
                 </section>
 			</article>
 			<article id="mainRight">
@@ -96,7 +124,7 @@
 					<h2><b> Related Pulications </b></h2>
 					<!-- about you -->
                     <hr></hr>
-                    <p>
+<!--                    <p>
                         <a href="https://openreview.net/forum?id=rrZtzI7xj2b"> 1.</a></a> <u>Zamani, M.</u>, Irteza, S., et al., Cross Domain Vulnerability Detection Using Graph Contrastive Learning, Accepted in ICLR TinyPaper 2023 </a>
                     </p>
                     <p>
@@ -110,7 +138,7 @@
                     </p>
                     <p>
                         <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=i1OZXOAAAAAJ&citation_for_view=i1OZXOAAAAAJ:UeHWp8X0CEIC"> 5.</a></a> Li, X., Khan, L., <u>Zamani, M.</u>, et a., MCoM: A Semi-Supervised Method for Imbalanced Tabular Security Data. In: Sural, S., Lu, H. (eds) Data and Applications Security and Privacy XXXVI. DBSec 2022.</a>
-                    </p>
+                    </p>  -->
 				</section>
 			</article>
 		</main>
