@@ -91,9 +91,9 @@
 
   			    </section>
                 <section>
-					<h2><b> Comparison of Contrastive and Generative graph algorithms on different graph types. Each cell shows the best result </b></h2>
+					<h2><b> Quantitative analysis of the performance of CDCPG across different applications when run on GraphMAE. Results are compared with existing graph types also. Each experiment is run five times with random seeds and the highest scores are reported. </b></h2>
                     <hr><b></b></hr>
-                    <center> <img src="./images/ComparitiveAnalysisApps.JPG" height="598" width="398"> </center>
+                    <center> <img src="./images/Quantitative-Analysis-CDCPG.JPG" height="598" width="398"> </center>
 
   			    </section>                
 <!--				<section>
@@ -120,6 +120,22 @@
                          <b> 3)	Function_graph_labels.txt (N lines):     The class labels (Vulnerable - 1, Non-Vulnerable - 0) for all graphs in the dataset, the ith record corresponds to the class label of the graph with graph_id i. </b>
                          <h3></h3>
                          <b> * For the current work, we didn’t consider node classification. We only categorized the graphs function-wise.  We can use the node classification in the future  </b>
+                         <h3></h3>
+                         <b> * There are OPTIONAL files following graph datasets similar to TUDatasets standard format which we have not generated (below files). We did not need in our research: 
+                         <h3></h3>
+                         <b>(a) DS_edge_labels.txt (m lines; same size as DS_A_sparse.txt) - labels for the edges in DD_A_sparse.txt (b) DS_edge_attributes.txt (m lines; same size as DS_A.txt) - attributes for the edges in DS_A.txt (c) DS_node_attributes.txt (n lines) - matrix of node attributes, the comma seperated values in the i-th line is the attribute vector of the node with node_id i (d) DS_graph_attributes.txt (N lines) - regression values for all graphs in the dataset, the value in the i-th line is the attribute of the graph with graph_id i </b>
+                         <h3></h3>
+                         <b> === Description of the dataset === </b>
+                         <h3></h3>
+                         <b> Node labels: </b>
+                         <h3></h3>
+                         <b> CompoundStatement, Statement, ExpressionStatement, ReturnStatement, ParameterList, Parameter, Identifier, ParameterType, FunctionDef, ReturnType, CFGExitNode, CFGEntryNode, IdentifierDeclStatement, IfStatement, IdentifierDecl, CallExpression, AssignmentExpr, Condition, SwitchStatement, IdentifierDeclType, Callee, ArgumentList, CastExpression, AndExpression, Argument, CastTarget, EqualityExpression, Label, Expression, PrimaryExpression, PtrMemberAccess, UnaryOp, UnaryOperator, ForStatement, GotoStatement, ForInit, IncDecOp, RelationalExpression, IncDec, SizeofExpr, AdditiveExpression, Sizeof, SizeofOperand, ConditionalExpression, BitAndExpression, BreakStatement, OrExpression, MemberAccess, ArrayIndexing, MultiplicativeExpression, ShiftExpression, WhileStatement, ElseStatement, ContinueStatement, UnaryExpression, InclusiveOrExpression, InitializerList, ClassDefStatement </b>
+                         <h3></h3>
+                         <b> Edge labels: </b>
+                         <h3></h3>
+                         <hr><b></b></hr>
+                         <center> <img src="./images/edge-labels.JPG"> </center>
+                    </b>
 				</section>
                 <section>
 					<h2><b> Usages </b></h2>
